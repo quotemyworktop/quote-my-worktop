@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Suppliers - Quote My Worktop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #e0c78c;
+      color: black;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cbb06a;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Join Our Supplier Network</h1>
+
+  <div class="content">
+    <p>Are you a professional worktop supplier or installer? Join the Quote My Worktop network and receive real customer job leads for kitchens across the UK. Submit quotes, compete transparently, and grow your business.</p>
+    <p>Register your interest below and we’ll be in touch with the next steps.</p>
+  </div>
+
+  <form action="https://formspree.io/f/mjvnjydo" method="POST">
+    <label for="business-name">Business Name</label>
+    <input type="text" name="business-name" id="business-name" required />
+
+    <label for="contact-name">Your Name</label>
+    <input type="text" name="contact-name" id="contact-name" required />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="text" name="phone" id="phone" />
+
+    <label for="location">Business Location</label>
+    <input type="text" name="location" id="location" />
+
+    <label for="message">Tell us about your services</label>
+    <textarea name="message" id="message" rows="4" placeholder="E.g. Quartz & granite fabrication, installation only, nationwide service, etc."></textarea>
+
+    <button type="submit">Register Interest</button>
+  </form>
+
+  <a class="back-link" href="index.html">&larr; Back to Home</a>
+
+</body>
+</html>

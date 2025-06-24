@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Quotes - Quote My Worktop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfaf6;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #e0c78c;
+      color: black;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cbb06a;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Get Worktop Quotes</h1>
+  <form action="https://formspree.io/f/moqgjqwe" method="POST" enctype="multipart/form-data">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" required />
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="postcode">Postcode</label>
+    <input type="text" name="postcode" id="postcode" required />
+
+    <label for="worktop">Type of Worktop</label>
+    <select name="worktop" id="worktop" required>
+      <option value="">-- Select --</option>
+      <option value="Quartz">Quartz</option>
+      <option value="Granite">Granite</option>
+      <option value="Timber">Timber</option>
+      <option value="Marble">Marble</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="details">Job Details</label>
+    <textarea name="details" id="details" rows="4" placeholder="Describe your kitchen layout, style, size, etc." required></textarea>
+
+    <label for="photo">Upload a photo or layout (optional)</label>
+    <input type="file" name="photo" id="photo" accept="image/*" />
+
+    <button type="submit">Submit Quote Request</button>
+  </form>
+
+  <a class="back-link" href="index.html">&larr; Back to Home</a>
+
+</body>
+</html>
