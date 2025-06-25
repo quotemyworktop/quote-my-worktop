@@ -8,32 +8,80 @@
   <link rel="icon" href="worktop_favicon.ico" type="image/x-icon" />
 </head>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fdfaf6;
-      color: #333;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1588854337221-cbfe9dcb2c2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      text-align: center;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 20px;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      margin: 0;
-    }
-    header p {
-      font-size: 20px;
-      margin: 20px 0;
-    }
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdfaf6;
+    color: #333;
+  }
+
+  header {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+    z-index: 1;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  .header-content h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .header-content p {
+    font-size: 22px;
+    color: #eee;
+    margin-bottom: 40px;
+  }
+
+  .cta-button {
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #bfa133;
+  }
+</style>
+
+<header>
+  <div class="header-content">
+    <h1>Quote My Worktop</h1>
+    <p>Compare, Choose, Install – All in One Place</p>
+    <a href="get-quotes.html">
+      <button class="cta-button">Get Quotes</button>
+    </a>
+  </div>
+</header>
     .btn {
       display: inline-block;
       background-color: #e0c78c;
